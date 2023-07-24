@@ -755,7 +755,7 @@ class HomeController
                 $result = $this->order->searchOrder($data['orderID'],$_SESSION['userID']);
             }
         }
-        $this->view("client.layout.Pages.Components.DataLayout.orderSearch",['cates' => $this->cate->all(),'result' => $result]);
+        $this->view("client.layout.Pages.Components.DataLayout.orderSearch",['cates' => $this->cate->all(),'result' => $result ?? '']);
     }
     
 }

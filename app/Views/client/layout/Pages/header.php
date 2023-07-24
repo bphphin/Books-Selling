@@ -45,7 +45,7 @@
                 <?php else : ?>
                     <a href="#" style="position: relative;" class="user">
                         Xin chào <p style="display: inline-block;text-transform: uppercase;"><?= isset($_SESSION['userID']) ? $_SESSION['username'] : '' ?></p>
-                        <div class="p-setting" style="display: inline;" href="#"><img class="img-setting" src="../../../../../../DuAn1-FPT/Public/images/product/settings-icon-13.png" alt="">
+                        <div class="p-setting" style="display: inline;" href="#"><img class="img-setting" src="<?= URL?>/Public/images/product/settings-icon-13.png" alt="">
                             <ul class="ul-setting">
                                 <li class="li-setting"><a class="anchor-a" style="border-right: none;" href="<?= URL ?>Home/updateUser/<?= $_SESSION['userID'] ?>">Thông tin tài khoản</a></li>
                                 <li class="li-setting"><a class="anchor-a" style="border-right: none;" href="<?= URL ?>Home/forgetPassword">Quên mật khẩu</a></li>
@@ -60,7 +60,7 @@
         <div class="div-banner">
             <a href="<?= URL ?>Home">
                 <p class="p-title-banner" style="font-family: 'Dancing Script', serif;">Bởi vì sách là cả thế giới</p>
-                <img src="../../../../../../DuAn1-FPT/Public/images/product/banner.png" alt="" class="img-banner">
+                <img src="<?= URL?>/Public/images/product/banner.png" alt="" class="img-banner">
             </a>
             <div class="div-searchsite">
                 <a href="<?= URL ?>Home/getCartByClientID" class="cart">
@@ -71,7 +71,7 @@
                 </a>
                 <form action="<?= URL ?>Home/loadBookSearch" method="post">
                     <input type="text" class="search-box" placeholder="Tìm kiếm sách của bạn..." name="bookName" required>
-                    <input type="image" type="submit" name="search-btn" src="../../../../../../DuAn1-FPT/Public/images/product/searchbg.png" value="Tìm kiếm" class="search-btn">
+                    <input type="image" type="submit" name="search-btn" src="<?= URL?>/Public/images/product/searchbg.png" value="Tìm kiếm" class="search-btn">
                 </form>
             </div>
         </div>
