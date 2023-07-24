@@ -3,7 +3,7 @@
     <div class="div-container-cart">
         <div class="div-main-cart">
             <div class="cart-empty">
-                <img src="../../../../../../../DuAn1-FPT/Public/images/product/cart_empty.png" alt="">
+                <img src="<?= URL?>/Public/images/product/cart_empty.png" alt="">
             </div>
             <div style="text-align: center;" class="content_cart-empty">
                 <h4>Giỏ hàng đang cảm thấy trống trải</h4>
@@ -28,7 +28,7 @@
 <?php
 if($data['result'] && count($data['result']) > 0) : ?>
     <div class="div-imgBookOrder">
-        <img src="../../../../../../../DuAn1-FPT/Public/upload/<?= $data['result']['image'] ?>" alt="">
+        <img src="<?= URL?>/Public/upload/<?= $data['result']['image'] ?>" alt="">
         
     </div>
     <div class="div-content">
